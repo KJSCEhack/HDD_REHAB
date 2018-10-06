@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mapfit Map</title>
+    <link href="http://cdn.mapfit.com/v2-4/assets/css/mapfit.css" rel='stylesheet' />
+</head>
+<body>
+    <div id="mapfit" style="width:100%; height:700px;">
+     	 
+  	</div>
+  	
+    <script src="http://cdn.mapfit.com/v2-4/assets/js/mapfit.js"></script>
+    <script>
+      // javascript from steps 4 & 5 below will go here
+// add api key
+mapfit.apikey = "591dccc4e499ca0001a4c6a4ff6799a1e09f490cb03899cb7c8fe47e";
+
+// draw map
+let map = mapfit.MapView('mapfit', {theme: 'grayscale'});
+
+//set zoom
+map.setZoom(13); 
+map.setMinZoom(12);
+map.setMaxZoom(15);
+// create marker
+position = mapfit.LatLng([19.0527, 72.90059]);
+
+position1 = mapfit.LatLng([19.00774516, 72.84325312]);
+position2 = mapfit.LatLng([19.01427083, 72.88320449]);
+position3 = mapfit.LatLng([19.08666845, 72.92302076]);
+position4 = mapfit.LatLng([19.05167653, 72.92690825]);
+position5 = mapfit.LatLng([19.06807754, 72.86328164]);
+position6 = mapfit.LatLng([19.08950779, 72.86266194]);
+position7 = mapfit.LatLng([19.04546232, 72.91561113]);
+position8 = mapfit.LatLng([19.09396854, 72.88477402]);
+position9 = mapfit.LatLng([19.07097839, 72.86972073]);
+position10 = mapfit.LatLng([19.09360697, 72.87818517]);
+position11 = mapfit.LatLng([19.05309798, 72.87610996]);
+position12 = mapfit.LatLng([19.08404892, 72.85840056]);
+position13 = mapfit.LatLng([19.09189457, 72.87406519]);
+position14 = mapfit.LatLng([19.07816072, 72.93897164]);
+position15 = mapfit.LatLng([19.05547152, 72.91796154]);
+position16 = mapfit.LatLng([19.07498306, 72.9142348]);
+position17 = mapfit.LatLng([19.02768167, 72.9386479]);
+position18 = mapfit.LatLng([19.02353364, 72.8977127]);
+position19 = mapfit.LatLng([19.09106954, 72.87798676]);
+position20 = mapfit.LatLng([19.01529076, 72.85209742]);
+
+
+
+
+myMarker1 = mapfit.Marker(position1);
+
+myMarker2 = mapfit.Marker(position2);
+myMarker3 = mapfit.Marker(position3);
+myMarker4 = mapfit.Marker(position4);
+myMarker5 = mapfit.Marker(position5);
+myMarker6 = mapfit.Marker(position6);
+myMarker7 = mapfit.Marker(position7);
+myMarker8 = mapfit.Marker(position8);
+myMarker9 = mapfit.Marker(position9);
+myMarker10 = mapfit.Marker(position10);
+myMarker11 = mapfit.Marker(position11);
+myMarker12= mapfit.Marker(position12);
+myMarker13 = mapfit.Marker(position13);
+myMarker14 = mapfit.Marker(position14);
+myMarker15 = mapfit.Marker(position15);
+myMarker16 = mapfit.Marker(position16);
+myMarker17 = mapfit.Marker(position17);
+myMarker18 = mapfit.Marker(position18);
+myMarker19 = mapfit.Marker(position19);
+myMarker20 = mapfit.Marker(position20);
+
+//set the map center on marker position
+map.setCenter(position);
+//add marker to map
+map.addMarker(myMarker1);
+map.addMarker(myMarker2);
+map.addMarker(myMarker3);
+map.addMarker(myMarker4);
+map.addMarker(myMarker5);
+map.addMarker(myMarker6);
+map.addMarker(myMarker7);
+map.addMarker(myMarker8);
+map.addMarker(myMarker9);
+map.addMarker(myMarker10);
+map.addMarker(myMarker11);
+map.addMarker(myMarker12);
+map.addMarker(myMarker13);
+map.addMarker(myMarker14);
+map.addMarker(myMarker15);
+map.addMarker(myMarker16);
+map.addMarker(myMarker17);
+map.addMarker(myMarker18);
+map.addMarker(myMarker19);
+map.addMarker(myMarker20);
+
+
+
+
+let placeInfo1 = mapfit.PlaceInfo();
+placeInfo1.setTitle('Streetlights not working');
+placeInfo1.setDescription('<p>"Since many days, the streetlights in my area are not working and it causes commutation problems during night, especially for women."</p>');
+placeInfo1.setContent("<html><h3 style=\"margin-left: 10px;\">Streetlights not working</h3><p style=\"margin-left: 10px; margin-right:10px;\">\"Since many days, the streetlights in my area are not working and it causes commutation problems during night, especially for women.\"</p><a style=\"margin-left: 10px; margin-right:10px;\" href=\"street1.jpg\" target=\"_blank\">Browse Images</a></html>");
+myMarker1.setPlaceInfo(placeInfo1);
+
+
+let placeInfo2 = mapfit.PlaceInfo();
+placeInfo2.setTitle('Metro construction causes noise pollution');
+placeInfo2.setDescription('<p>"Because of the metro construction working on the road opposite to our house during night, there is a lot of disturbance and hence it makes difficult for us to sleep and take rest. It is requested to continue working on metro during morning working hours."</p>');
+placeInfo2.setContent("<html><h3 style=\"margin-left: 10px;\">Metro construction causes noise pollution</h3><p style=\"margin-left: 10px; margin-right:10px;\">\"Because of the metro construction working on the road opposite to our house during night, there is a lot of disturbance and hence it makes difficult for us to sleep and take rest. It is requested to continue working on metro during morning working hours.\"</p><a style=\"margin-left: 10px; margin-right:10px;\" href=\"metro2.jpg\" target=\"_blank\">Browse Images</a></html>");
+myMarker2.setPlaceInfo(placeInfo2);
+
+let placeInfo3 = mapfit.PlaceInfo();
+placeInfo3.setTitle('Food hawkers on road causes traffic');
+placeInfo3.setDescription('<p>"Everyday during evening hours, there are a lot of food hawkers making the place crowded and causing traffic on roads. These hawkers must be jailed for illegaly selling foods on road and causing difficulties for vehicles."</p>');
+placeInfo3.setContent("<html><h3 style=\"margin-left: 10px;\">Food hawkers on road causes traffic</h3><p style=\"margin-left: 10px; margin-right:10px;\">\"Everyday during evening hours, there are a lot of food hawkers making the place crowded and causing traffic on roads. These hawkers must be jailed for illegaly selling foods on road and causing difficulties for vehicles.\"</p><a style=\"margin-left: 10px; margin-right:10px;\" href=\"hawker4.jpg\" target=\"_blank\">Browse Images</a></html>");
+myMarker3.setPlaceInfo(placeInfo3);
+
+
+let placeInfo4 = mapfit.PlaceInfo();
+placeInfo4.setTitle('Too much of air pollution');
+placeInfo4.setDescription('<p>A lot of air pollution is created by the nearby steel factory during morning hours. This has caused lungs infection to some children and senior citizens of nearby locality.</p>');
+placeInfo4.setContent("<html><h3 style=\"margin-left: 10px;\">Too much of air pollution</h3><p style=\"margin-left: 10px; margin-right:10px;\">\"A lot of air pollution is created by the nearby steel factory during morning hours. This has caused lungs infection to some children and senior citizens of nearby locality.\"</p><a style=\"margin-left: 10px; margin-right:10px;\" href=\"poll5.jpg\" target=\"_blank\">Browse Images</a></html>");
+myMarker4.setPlaceInfo(placeInfo4);
+
+
+let placeInfo5 = mapfit.PlaceInfo();
+placeInfo5.setTitle('Railway ticket counter closed');
+placeInfo5.setDescription('<p>Yesterday when I was getting late at work, I saw the ticket window of XYZ railway station was closed. There was no one at the counter and I wanted to renew my pass. Because of that, I could not reach to meeting on time. </p>');
+placeInfo5.setContent("<html><h3 style=\"margin-left: 10px;\">Railway ticket counter closed</h3><p style=\"margin-left: 10px; margin-right:10px;\">\"Yesterday when I was getting late at work, I saw the ticket window of XYZ railway station was closed. There was no one at the counter and I wanted to renew my pass. Because of that, I could not reach to meeting on time. \"</p><a style=\"margin-left: 10px; margin-right:10px;\" href=\"ticket5.jpg\" target=\"_blank\">Browse Images</a></html>");
+myMarker5.setPlaceInfo(placeInfo5);
+
+
+let placeInfo6 = mapfit.PlaceInfo();
+placeInfo6.setTitle('Noise of Navratri function near our residence');
+placeInfo6.setDescription('<p>Due to the celebration of Navratri festival at a parade ground near by us, we are not able to sleep. The loud noise causes a big problem for the people nearby.</p>');
+placeInfo6.setContent("<html><h3 style=\"margin-left: 10px;\">Noise of Navratri function near our residence</h3><p style=\"margin-left: 10px; margin-right:10px;\">\"Due to the celebration of Navratri festival at a parade ground near by us, we are not able to sleep. The loud noise causes a big problem for the people nearby.\"</p><a style=\"margin-left: 10px; margin-right:10px;\" href=\"navratri6.jpg\" target=\"_blank\">Browse Images</a></html>");
+myMarker6.setPlaceInfo(placeInfo6);
+
+
+let placeInfo7 = mapfit.PlaceInfo();
+placeInfo7.setTitle('Cutting of several trees near our locality');
+placeInfo7.setDescription('<p>Trees are an important part of ecological system in our environment. Municipal govt. in our locality have cut all the trees just to develop suburban mono rail system.</p>');
+placeInfo7.setContent("<html><h3 style=\"margin-left: 10px;\">Cutting of several trees near our locality</h3><p style=\"margin-left: 10px; margin-right:10px;\">\"Trees are an important part of ecological system in our environment. Municipal govt. in our locality have cut all the trees just to develop suburban mono rail system.\"</p><a style=\"margin-left: 10px; margin-right:10px;\" href=\"trees7.jpg\" target=\"_blank\">Browse Images</a></html>");
+myMarker7.setPlaceInfo(placeInfo7);
+
+
+let placeInfo8 = mapfit.PlaceInfo();
+placeInfo8.setTitle('Garbage not being collected by workers since a week');
+placeInfo8.setDescription('<p>The garbage at a dump house near our area is not collected since a week and that has led to increase in foul smell in nearby areas and brooding of poisonous mosquitoes. Please try to clear that at the earnest.</p>');
+placeInfo8.setContent("<html><h3 style=\"margin-left: 10px;\">Garbage not being collected by workers since a week</h3><p style=\"margin-left: 10px; margin-right:10px;\">\"The garbage at a dump house near our area is not collected since a week and that has led to increase in foul smell in nearby areas and brooding of poisonous mosquitoes. Please try to clear that at the earnest.\"</p><a style=\"margin-left: 10px; margin-right:10px;\" href=\"garbage8.jpg\" target=\"_blank\">Browse Images</a></html>");
+myMarker8.setPlaceInfo(placeInfo8);
+
+
+let placeInfo9 = mapfit.PlaceInfo();
+placeInfo9.setTitle('Contaminated water supply quality at home ');
+placeInfo9.setDescription('<p>Since few days the water that we receive at our homes is contanimated and colored pale yellow. Please ensure supply of fresh chlorinated water as it can lead to several health diseases to people consuming such water.</p>');
+placeInfo9.setContent("<html><h3 style=\"margin-left: 10px;\">Contaminated water supply quality at home </h3><p style=\"margin-left: 10px; margin-right:10px;\">\"Since few days the water that we receive at our homes is contanimated and colored pale yellow. Please ensure supply of fresh chlorinated water as it can lead to several health diseases to people consuming such water.\"</p><a style=\"margin-left: 10px; margin-right:10px;\" href=\"water9.jpg\" target=\"_blank\">Browse Images</a></html>");
+myMarker9.setPlaceInfo(placeInfo9);
+
+
+let placeInfo10 = mapfit.PlaceInfo();
+placeInfo10.setTitle('Illegal malpractice by shopkeeper ');
+placeInfo10.setDescription('<p>The local shopkeeper of our area is selling wrong amount of goods by manipulating weighing scale machine. This kind of unethical must come to the public and appropriate punishment should be conferred upon the shopkeeper.</p>');
+myMarker10.setPlaceInfo(placeInfo10);
+
+
+let placeInfo11 = mapfit.PlaceInfo();
+placeInfo11.setTitle('Breaking of signal by political party vehicle');
+placeInfo11.setDescription('<p>Today morning the LBS road was completely blocked and closed for about 4 hours. No vehicles were allowed to move ahead because of some casualty. But when the politician\'s car came, they were allowed to break the signal and go without any restrictions. This kind of act is seriously not acceptable.</p>');
+myMarker11.setPlaceInfo(placeInfo11);
+
+
+let placeInfo12 = mapfit.PlaceInfo();
+placeInfo12.setTitle('Electric meters being manipulated for showing higher unit consumptions');
+placeInfo12.setDescription('<p>The electric meters of about 10 houses in our building were found to be metered and manipulated by the electrician for showing higher unit consumption than actual.</p>');
+myMarker12.setPlaceInfo(placeInfo12);
+
+
+let placeInfo13 = mapfit.PlaceInfo();
+placeInfo13.setTitle('BEST bus service not arriving on time');
+placeInfo13.setDescription('<p>The buses of BEST never arrive on time. I had to wait for about 40 minutes for the bus to come. This is the twice in a week I got late for my work. Please see to it that buses follow a proper schedule for reporting to respective bus stations.</p>');
+myMarker13.setPlaceInfo(placeInfo13);
+
+
+let placeInfo14 = mapfit.PlaceInfo();
+placeInfo14.setTitle('Too many potholes on the road');
+placeInfo14.setDescription('<p>The road quality needs to be improved. So many potholes causes serious issues for local commutation.</p>');
+placeInfo14.setContent("<html><h3 style=\"margin-left: 10px;\">Too many potholes on the road</h3><p style=\"margin-left: 10px; margin-right:10px;\">\"The road quality needs to be improved. So many potholes causes serious issues for local commutation.\"</p><a style=\"margin-left: 10px; margin-right:10px;\" href=\"pothole10.jpg\" target=\"_blank\">Browse Images</a></html>");
+myMarker14.setPlaceInfo(placeInfo14);
+
+
+let placeInfo15 = mapfit.PlaceInfo();
+placeInfo15.setTitle('Overflow of gutter not being solved');
+placeInfo15.setDescription('<p>The gutter started overflowing near our area and its been three days but no one from govt. aid has come to improve the condition. The overflow has caused a lot of problems for the nearby areas.</p>');
+myMarker15.setPlaceInfo(placeInfo15);
+
+
+let placeInfo16 = mapfit.PlaceInfo();
+placeInfo16.setTitle('Thugs harassing same woman daily at evening');
+placeInfo16.setDescription('<p>Some bad people are harassing a woman at 8pm everyday at SB marg. The helpless woman have to suffer a lot. Please improve patrolling at that area to avoid this.</p>');
+myMarker16.setPlaceInfo(placeInfo16);
+
+
+let placeInfo17 = mapfit.PlaceInfo();
+placeInfo17.setTitle('Police asking for bribe from rich person');
+placeInfo17.setDescription('<p>I saw a traffic police asking a bike rider for 2000 Rupees compensation for not giving challan about not wearing helmet. Corrupt India.</p>');
+myMarker17.setPlaceInfo(placeInfo17);
+
+
+let placeInfo18 = mapfit.PlaceInfo();
+placeInfo18.setTitle('Child labour being practiced at nearby restaurant');
+placeInfo18.setDescription('<p>I went to a nearby restaurant named Shilpa retreat yesterday and I saw a 9 year old kid cleaning tables. At the age when he should study, he is cleaning tables and dishes.</p>');
+placeInfo18.setContent("<html><h3 style=\"margin-left: 10px;\">Child labour being practiced at nearby restaurant</h3><p style=\"margin-left: 10px; margin-right:10px;\">\"I went to a nearby restaurant named Shilpa retreat yesterday and I saw a 9 year old kid cleaning tables. At the age when he should study, he is cleaning tables and dishes.\"</p><a style=\"margin-left: 10px; margin-right:10px;\" href=\"labor11.jpg\" target=\"_blank\">Browse Images</a></html>");
+myMarker18.setPlaceInfo(placeInfo18);
+
+
+let placeInfo19 = mapfit.PlaceInfo();
+placeInfo19.setTitle('Broken road contition still not improved');
+placeInfo19.setDescription('<p>-</p>');
+placeInfo19.setContent("<html><h3 style=\"margin-left: 10px;\">Broken road contition still not improved</h3><p style=\"margin-left: 10px; margin-right:10px;\">\"-\"</p><a style=\"margin-left: 10px; margin-right:10px;\" href=\"broken12.jpg\" target=\"_blank\">Browse Images</a></html>");
+myMarker19.setPlaceInfo(placeInfo19);
+
+
+let placeInfo20 = mapfit.PlaceInfo();
+placeInfo20.setTitle('Use of food colors by street food vendors');
+placeInfo20.setDescription('<p>The chinese food vendor at tilak road uses artificial colors in foods. These kind of colors can cause serious health diseases if consumed by people.</p>');
+myMarker20.setPlaceInfo(placeInfo20);
+
+
+
+
+
+      
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
